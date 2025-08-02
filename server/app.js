@@ -9,7 +9,7 @@ app.get('/',(req,res)=>{
     res.send("Server is running")
 })
 
-app.listen(process.env.PORT,()=>{
-    console.log(`http://localhost:${process.env.PORT}`)
+app.listen(process.env.PORT || 4000,()=>{
+    console.log(`http://localhost:${process.env.PORT || 4000}`)
 })
 
