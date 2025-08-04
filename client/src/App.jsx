@@ -4,6 +4,8 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import SignupPage from './pages/SignupPage'
 import TopicsSelectionPage from './pages/TopicsSelectionPage'
 import PreferencesPage from './pages/PreferencesPage'
+import EditTopicsPage from './pages/EditTopicsPage'
+import DashboardPage from './pages/DashboardPage'
 
 function App() {
 const router = createBrowserRouter([
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
   {
     path : "/preferences",
     element : <PreferencesPage/>,
+  },
+  {
+    path : "/edit-topics",
+    element : <EditTopicsPage/>,
+  },
+  {
+    path : "/dashboard",
+    element : <DashboardPage/>,
   } 
 ])
   return (
