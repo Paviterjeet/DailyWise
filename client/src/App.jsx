@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import SignupPage from './pages/SignupPage'
 import TopicsSelectionPage from './pages/TopicsSelectionPage'
+import PreferencesPage from './pages/PreferencesPage'
 
 function App() {
 const router = createBrowserRouter([
@@ -20,8 +21,8 @@ const router = createBrowserRouter([
   },
   {
     path : "/preferences",
-    element : <TopicsSelectionPage/>,
-  }
+    element : <PreferencesPage/>,
+  } 
 ])
   return (
     
